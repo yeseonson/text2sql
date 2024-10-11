@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "DataUploadPipeline",
 	"properties": {
 		"activities": [
 			{
@@ -47,13 +47,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "LoadDelimitedText",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet1",
+						"referenceName": "ReturnParquet",
 						"type": "DatasetReference"
 					}
 				]
