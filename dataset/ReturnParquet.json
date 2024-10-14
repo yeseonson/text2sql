@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "bc_sample.parquet",
-				"container": "output"
+				"container": "data"
 			},
 			"compressionCodec": "snappy"
 		},
