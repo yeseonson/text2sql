@@ -5,6 +5,11 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
@@ -15,6 +20,95 @@
 			},
 			"compressionCodec": "none"
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "STRD_YYMM",
+				"type": "UTF8"
+			},
+			{
+				"name": "SALE_DATE",
+				"type": "UTF8"
+			},
+			{
+				"name": "TIME_CD",
+				"type": "UTF8"
+			},
+			{
+				"name": "INDV_CP_DV_CD",
+				"type": "UTF8"
+			},
+			{
+				"name": "MER_SIDO_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "MER_CCG_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "MER_ADNG_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "MER_ADNG_NO",
+				"type": "UTF8"
+			},
+			{
+				"name": "MAIN_BUZ_DESC",
+				"type": "UTF8"
+			},
+			{
+				"name": "TP_GRP_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "ALS_MER_TPBUZ_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "CSTMR_SIDO_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "CSTMR_CCG_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "CSTMR_ADNG_NM",
+				"type": "UTF8"
+			},
+			{
+				"name": "CSTMR_ADNG_NO",
+				"type": "UTF8"
+			},
+			{
+				"name": "SE_CTGO_CD",
+				"type": "UTF8"
+			},
+			{
+				"name": "AGE_10_CD",
+				"type": "UTF8"
+			},
+			{
+				"name": "LIFE_GB_CD",
+				"type": "UTF8"
+			},
+			{
+				"name": "INDV_INCM_AMT",
+				"type": "UTF8"
+			},
+			{
+				"name": "MER_CNT",
+				"type": "UTF8"
+			},
+			{
+				"name": "SALE_AMT",
+				"type": "UTF8"
+			},
+			{
+				"name": "SALE_CNT",
+				"type": "UTF8"
+			}
+		]
 	}
 }
