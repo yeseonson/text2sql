@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "bc_sample.parquet",
 				"container": "data"
 			},
 			"compressionCodec": "gzip"
