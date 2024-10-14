@@ -13,7 +13,7 @@
 				"fileName": "bc_sample.parquet",
 				"container": "data"
 			},
-			"compressionCodec": "none"
+			"compressionCodec": "gzip"
 		},
 		"schema": [
 			{
