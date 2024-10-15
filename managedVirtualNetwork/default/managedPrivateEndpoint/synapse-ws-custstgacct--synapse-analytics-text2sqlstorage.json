@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-custstgacct--synapse-analytics-text2sqlstorage",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/3e65c204-688b-4b24-b803-496cb942669d/resourceGroups/ResourceGroup-TextToSQL/providers/Microsoft.Storage/storageAccounts/text2sqlstorage",
+		"groupId": "dfs",
+		"fqdns": [
+			"text2sqlstorage.dfs.core.windows.net"
+		]
+	}
+}

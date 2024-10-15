@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sqlOnDemand--synapse-analytics",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/3e65c204-688b-4b24-b803-496cb942669d/resourceGroups/ResourceGroup-TextToSQL/providers/Microsoft.Synapse/workspaces/synapse-analytics",
+		"groupId": "sqlOnDemand",
+		"fqdns": [
+			"synapse-analytics-ondemand.77cb4397-bfe1-4d69-8f7a-61b652505a2f.sql.azuresynapse.net"
+		]
+	}
+}

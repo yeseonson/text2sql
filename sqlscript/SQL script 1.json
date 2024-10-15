@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "\n-- CREATE DATABASE bcdb;\n\n-- alter database bcdb\n--     COLLATE Latin1_General_100_BIN2_UTF8;\n\n-- ALTER DATABASE bcdb \n--     COLLATE Korean_Wansung_CS_AS;\n\n\n-- USE bcdb;\n\nCREATE EXTERNAL DATA SOURCE bc_sample\nWITH\n(\n    LOCATION = 'https://text2sqlstorage.blob.core.windows.net'\n);\n\n-- DROP EXTERNAL data SOURCE bc_sample;\n\nCREATE EXTERNAL FILE FORMAT parquet\nWITH (\n    FORMAT_TYPE = PARQUET\n);\n\nCREATE EXTERNAL FILE FORMAT delimitedText\nWITH (\n    FORMAT_TYPE = DELIMITEDTEXT\n);\n\nCREATE MASTER KEY ENCRYPTION BY PASSWORD = 'credit!23';\n\n-- 스토리지 계정에서 SAS 액세스 서명 생성 필요\nCREATE DATABASE SCOPED CREDENTIAL bc_sample\nWITH IDENTITY = 'SHARED ACCESS SIGNATURE',\nSECRET = 'sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupyx&se=2024-10-24T14:02:07Z&st=2024-10-14T06:02:07Z&spr=https&sig=vUlb7QXGmNsQnhHm1F6KLzZSUaiOb%2BFBD%2BwVwbLgZIc%3D';\n\n-- DROP EXTERNAL TABLE table1;\nCREATE EXTERNAL TABLE table1\n(\n    STRD_YYMM varchar(40),\n    SALE_DATE varchar(40),\n    TIME_CD varchar(40),\n    INDV_CP_DV_CD varchar(40),\n    MER_SIDO_NM varchar(40),\n    MER_CCG_NM varchar(40),\n    MER_ADNG_NM varchar(40),\n    MER_ADNG_NO varchar(40),\n    MAIN_BUZ_DESC varchar(40),\n    TP_GRP_NM varchar(40),\n    ALS_MER_TPBUZ_NM varchar(40),\n    CSTMR_SIDO_NM varchar(40),\n    CSTMR_CCG_NM varchar(40),\n    CSTMR_ADNG_NM varchar(40),\n    CSTMR_ADNG_NO varchar(40),\n    SE_CTGO_CD varchar(40),\n    AGE_10_CD varchar(40),\n    LIFE_GB_CD varchar(40),\n    INDV_INCM_AMT varchar(40),\n    MER_CNT varchar(40),\n    SALE_AMT varchar(40),\n    SALE_CNT varchar(40),\n    MER_ADDR varchar(200) NULL,\n    MER_TPBUZ_NM varchar(200) NULL\n)\nWITH (\n    LOCATION = '/data/',\n    DATA_SOURCE = bc_sample,\n    FILE_FORMAT = parquet\n);\n\n\n\nCREATE EXTERNAL TABLE table2\n(\n    SALE_DATE datetime2 NOT NULL,\n    TIME_CD varchar(30) NOT NULL,\n    INDV_CP_DV_CD varchar(30) NULL,\n    MER_ADDR varchar(200) NULL,\n    MER_TPBUZ_NM varchar(200) NULL,\n    SEX_CTGO_CD varchar(30) NULL,\n    AGE_10_CD varchar(30) NULL,\n    LIFE_GB_CD varchar(30) NULL,\n    MER_CNT numeric NOT NULL,\n    SALE_AMT numeric NOT NULL,\n    SALE_CNT numeric NOT NULL\n)\nWITH (\n    LOCATION = '/bccard/',\n    DATA_SOURCE = bc_sample,\n    FILE_FORMAT = parquet\n);\n\nSELECT * FROM table1;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "bccard",
+				"poolName": "bccard"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
