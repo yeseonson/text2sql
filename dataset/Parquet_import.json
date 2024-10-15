@@ -1,5 +1,5 @@
 {
-	"name": "Parquet1",
+	"name": "Parquet_import",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -19,7 +19,7 @@
 					"value": "@dataset().return_filename",
 					"type": "Expression"
 				},
-				"container": "data"
+				"container": "bccard"
 			},
 			"compressionCodec": "none"
 		},
