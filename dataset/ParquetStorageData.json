@@ -1,5 +1,5 @@
 {
-	"name": "Parquet_import",
+	"name": "ParquetStorageData",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -19,55 +19,10 @@
 					"value": "@dataset().return_filename",
 					"type": "Expression"
 				},
-				"container": "bccard"
+				"container": "data"
 			},
 			"compressionCodec": "none"
 		},
-		"schema": [
-			{
-				"name": "SALE_DATE",
-				"type": "UTF8"
-			},
-			{
-				"name": "TIME_CD",
-				"type": "UTF8"
-			},
-			{
-				"name": "INDV_CP_DV_CD",
-				"type": "UTF8"
-			},
-			{
-				"name": "MER_ADDR",
-				"type": "UTF8"
-			},
-			{
-				"name": "MER_TPBUZ_NM",
-				"type": "UTF8"
-			},
-			{
-				"name": "SEX_CTGO_CD",
-				"type": "UTF8"
-			},
-			{
-				"name": "AGE_10_CD",
-				"type": "UTF8"
-			},
-			{
-				"name": "LIFE_GB_CD",
-				"type": "UTF8"
-			},
-			{
-				"name": "MER_CNT",
-				"type": "UTF8"
-			},
-			{
-				"name": "SALE_AMT",
-				"type": "UTF8"
-			},
-			{
-				"name": "SALE_CNT",
-				"type": "UTF8"
-			}
-		]
+		"schema": []
 	}
 }
