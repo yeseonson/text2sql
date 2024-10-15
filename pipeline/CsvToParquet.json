@@ -41,6 +41,18 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "STRD_YYMM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "STRD_YYMM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
 									"name": "SALE_DATE",
 									"type": "String",
 									"physicalType": "String"
@@ -77,36 +89,144 @@
 							},
 							{
 								"source": {
-									"name": "MER_ADDR",
+									"name": "MER_SIDO_NM",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MER_ADDR",
+									"name": "MER_SIDO_NM",
 									"type": "String",
 									"physicalType": "UTF8"
 								}
 							},
 							{
 								"source": {
-									"name": "MER_TPBUZ_NM",
+									"name": "MER_CCG_NM",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MER_TPBUZ_NM",
+									"name": "MER_CCG_NM",
 									"type": "String",
 									"physicalType": "UTF8"
 								}
 							},
 							{
 								"source": {
-									"name": "SEX_CTGO_CD",
+									"name": "MER_ADNG_NM",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "SEX_CTGO_CD",
+									"name": "MER_ADNG_NM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "MER_ADNG_NO",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MER_ADNG_NO",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "MAIN_BUZ_DESC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MAIN_BUZ_DESC",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "TP_GRP_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TP_GRP_NM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ALS_MER_TPBUZ_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ALS_MER_TPBUZ_NM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "CSTMR_SIDO_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CSTMR_SIDO_NM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "CSTMR_CCG_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CSTMR_CCG_NM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "CSTMR_ADNG_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CSTMR_ADNG_NM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "CSTMR_ADNG_NO",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CSTMR_ADNG_NO",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "SE_CTGO_CD",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SE_CTGO_CD",
 									"type": "String",
 									"physicalType": "UTF8"
 								}
@@ -131,6 +251,18 @@
 								},
 								"sink": {
 									"name": "LIFE_GB_CD",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "INDV_INCM_AMT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "INDV_INCM_AMT",
 									"type": "String",
 									"physicalType": "UTF8"
 								}
