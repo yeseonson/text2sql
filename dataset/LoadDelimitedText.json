@@ -22,7 +22,7 @@
 				"container": "org"
 			},
 			"columnDelimiter": ",",
-			"encodingName": "UTF-8",
+			"encodingName": "EUC-KR",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": ""
