@@ -12,7 +12,15 @@
 					"name": "source1"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ParquetStorageData",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "derivedColumnAddr",
@@ -51,7 +59,12 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"derivedColumnTpbuz derive(MER_ADDR = MER_SIDO_NM + ' ' + MER_CCG_NM + ' ' + MER_ADNG_NM) ~> derivedColumnAddr",
-				"source1 derive(MER_TPBUZ_NM = MAIN_BUZ_DESC + ' ' + TP_GRP_NM + ' ' + ALS_MER_TPBUZ_NM) ~> derivedColumnTpbuz"
+				"source1 derive(MER_TPBUZ_NM = MAIN_BUZ_DESC + ' ' + TP_GRP_NM + ' ' + ALS_MER_TPBUZ_NM) ~> derivedColumnTpbuz",
+				"derivedColumnAddr sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'parquet',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
