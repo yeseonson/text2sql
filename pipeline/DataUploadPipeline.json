@@ -48,25 +48,23 @@
 				"inputs": [
 					{
 						"referenceName": "LoadDelimitedText",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"csv_filename": "bc_sample_01_euckr.csv"
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "Parquet1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"return_filename": "bc_sample_01_euckr.parquet"
+						}
 					}
 				]
 			}
 		],
-		"parameters": {
-			"csv_filename": {
-				"type": "string"
-			},
-			"return_filename": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
