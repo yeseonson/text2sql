@@ -181,16 +181,16 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "LoadDelimitedText",
+						"referenceName": "csv_org",
 						"type": "DatasetReference",
 						"parameters": {
-							"csv_filename": "bc_sample_import.csv"
+							"csv_filename": "bc_sample_01.csv"
 						}
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet_import",
+						"referenceName": "ParquetStorageData",
 						"type": "DatasetReference",
 						"parameters": {
 							"return_filename": "bccard_01.parquet"
