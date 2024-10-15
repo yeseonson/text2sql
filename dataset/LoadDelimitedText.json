@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().csv_filename",
+					"type": "Expression"
+				},
 				"container": "org"
 			},
 			"columnDelimiter": ",",

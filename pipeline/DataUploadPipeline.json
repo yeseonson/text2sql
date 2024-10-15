@@ -60,9 +60,11 @@
 			}
 		],
 		"parameters": {
-			"filename": {
-				"type": "string",
-				"defaultValue": "bc_sample.csv"
+			"csv_filename": {
+				"type": "string"
+			},
+			"return_filename": {
+				"type": "string"
 			}
 		},
 		"annotations": []
