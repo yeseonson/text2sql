@@ -21,7 +21,7 @@
 				},
 				"container": "data"
 			},
-			"compressionCodec": "gzip"
+			"compressionCodec": "none"
 		},
 		"schema": [
 			{

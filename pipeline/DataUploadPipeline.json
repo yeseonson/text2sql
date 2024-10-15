@@ -50,7 +50,7 @@
 						"referenceName": "LoadDelimitedText",
 						"type": "DatasetReference",
 						"parameters": {
-							"csv_filename": "bc_sample_01_euckr.csv"
+							"csv_filename": "bc_sample_01.csv"
 						}
 					}
 				],
@@ -59,7 +59,7 @@
 						"referenceName": "Parquet1",
 						"type": "DatasetReference",
 						"parameters": {
-							"return_filename": "bc_sample_01_euckr.parquet"
+							"return_filename": "bc_sample_01.parquet"
 						}
 					}
 				]
