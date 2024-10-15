@@ -1,0 +1,58 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "csv_org",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "derivedColumnAddr",
+					"description": "MER_SIDO_NM + ' ' + MER_CCG_NM + ' ' + MER_ADNG_NM"
+				},
+				{
+					"name": "derivedColumnTpbuz"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          STRD_YYMM as string,",
+				"          SALE_DATE as string,",
+				"          TIME_CD as string,",
+				"          INDV_CP_DV_CD as string,",
+				"          MER_SIDO_NM as string,",
+				"          MER_CCG_NM as string,",
+				"          MER_ADNG_NM as string,",
+				"          MER_ADNG_NO as string,",
+				"          MAIN_BUZ_DESC as string,",
+				"          TP_GRP_NM as string,",
+				"          ALS_MER_TPBUZ_NM as string,",
+				"          CSTMR_SIDO_NM as string,",
+				"          CSTMR_CCG_NM as string,",
+				"          CSTMR_ADNG_NM as string,",
+				"          CSTMR_ADNG_NO as string,",
+				"          SE_CTGO_CD as string,",
+				"          AGE_10_CD as string,",
+				"          LIFE_GB_CD as string,",
+				"          INDV_INCM_AMT as string,",
+				"          MER_CNT as string,",
+				"          SALE_AMT as string,",
+				"          SALE_CNT as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
+				"derivedColumnTpbuz derive(MER_ADDR = MER_SIDO_NM + ' ' + MER_CCG_NM + ' ' + MER_ADNG_NM) ~> derivedColumnAddr",
+				"source1 derive(MER_TPBUZ_NM = MAIN_BUZ_DESC + ' ' + TP_GRP_NM + ' ' + ALS_MER_TPBUZ_NM) ~> derivedColumnTpbuz"
+			]
+		}
+	}
+}
