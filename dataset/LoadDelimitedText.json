@@ -22,10 +22,9 @@
 				"container": "org"
 			},
 			"columnDelimiter": ",",
-			"encodingName": "EUC-KR",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
-			"quoteChar": ""
+			"quoteChar": "\""
 		},
 		"schema": [
 			{
