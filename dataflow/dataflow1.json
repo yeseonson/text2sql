@@ -24,10 +24,11 @@
 			"transformations": [
 				{
 					"name": "derivedColumnAddr",
-					"description": "MER_SIDO_NM + ' ' + MER_CCG_NM + ' ' + MER_ADNG_NM"
+					"description": "MER_ADDR 만들기 "
 				},
 				{
-					"name": "derivedColumnTpbuz"
+					"name": "derivedColumnTpbuz",
+					"description": "MER_TPBUZ_NM 만들기 "
 				}
 			],
 			"scriptLines": [
@@ -63,6 +64,7 @@
 				"derivedColumnAddr sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     format: 'parquet',",
+				"     partitionFileNames:['output.parquet'],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
