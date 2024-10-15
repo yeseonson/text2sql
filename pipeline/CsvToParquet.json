@@ -38,6 +38,140 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "SALE_DATE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SALE_DATE",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "TIME_CD",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TIME_CD",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "INDV_CP_DV_CD",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "INDV_CP_DV_CD",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "MER_ADDR",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MER_ADDR",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "MER_TPBUZ_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MER_TPBUZ_NM",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "SEX_CTGO_CD",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SEX_CTGO_CD",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "AGE_10_CD",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AGE_10_CD",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "LIFE_GB_CD",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LIFE_GB_CD",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "MER_CNT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MER_CNT",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "SALE_AMT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SALE_AMT",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "SALE_CNT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SALE_CNT",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
