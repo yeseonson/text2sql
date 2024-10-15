@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "dataflow",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
@@ -51,10 +51,10 @@
 				"          SE_CTGO_CD as string,",
 				"          AGE_10_CD as string,",
 				"          LIFE_GB_CD as string,",
-				"          INDV_INCM_AMT as string,",
-				"          MER_CNT as string,",
-				"          SALE_AMT as string,",
-				"          SALE_CNT as string",
+				"          INDV_INCM_AMT as integer,",
+				"          MER_CNT as integer,",
+				"          SALE_AMT as integer,",
+				"          SALE_CNT as integer",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
