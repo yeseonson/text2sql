@@ -22,9 +22,10 @@
 				"container": "org"
 			},
 			"columnDelimiter": ",",
+			"encodingName": "UTF-8 without BOM",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"quoteChar": ""
 		},
 		"schema": [
 			{
